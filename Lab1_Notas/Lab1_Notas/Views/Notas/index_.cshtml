@@ -1,0 +1,28 @@
+﻿@model Lab1_Notas.Models.Acciones
+
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1 class="titulo" >Cajero Automatico</h1>
+
+<div class="color">
+<form asp-controller="Notas" asp-action="index_"> 
+    <div class="card"> 
+<label>Ingrese la cantidad a retirar</label>
+
+ <input type="number" asp-for="Monto" placeholder="Ingresa el monto" class="form-control" min="0" max="5000"/>
+ <hr />
+ 
+
+<button  class="btn btn-secondary">Retirar</button>
+<label> Saldo Actual</label>
+<textarea class="area" >@ViewBag.variableaenviar</textarea>
+
+
+</div>
+</form>
+
+</div>
